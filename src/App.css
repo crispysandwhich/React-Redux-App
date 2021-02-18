@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-app{
+    width: 100%;
+    min-height: 100vh;
+    background-color: crimson;
+}
+
+/* Main header */
+.main-header{
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color:aliceblue;
+}
+.main-header h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.main-header p{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* trending section */
+.trending {
+    margin: 5px;
+    background-color: #333;
+    padding: 5px;
+    width: 100%;
+}
+.trending h2{
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+/* card section */
+.trending .card-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-section .single-card{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gold;
+}
+.single-card h4{
+    font-size: 1.2rem;
+    color:aliceblue;
+    margin-bottom: 5px;
+}

@@ -1,19 +1,16 @@
 import React from 'react'
 
 function Card({data, isLoading}) {
-
-    console.log(data, isLoading)
-
     return (
         <div>
             {
                 isLoading ? <h2>Loading...</h2> : 
-                <div>
+                <div className="card-section">
                     {data[0].map(item => {
                         return (
-                            <div key={item.id}>
-                                {item.title}
-                                <img src={item.images.downsized.url} width="150px" />
+                            <div key={item.id} className="single-card">
+                                <h4>{item.title}</h4>
+                                <img src={item.images.downsized.url} />
                             </div>
                         )
                     })}
